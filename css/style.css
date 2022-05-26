@@ -1,0 +1,466 @@
+z/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+	font-family: "Cinzel", "Times New Roman", Times, serif;
+     font-size: 16px;
+     max-width: 100%;
+}
+
+header {
+     outline: auto;
+     max-width: 100%;
+}
+
+nav {
+     display: flex;
+     flex-direction: row;
+     height: 3rem;
+     width: 100%;
+}
+
+ul {
+     display: flex;
+     width: 80%;
+}
+
+nav span {
+     display: flex;
+     width: 20%;
+     margin: auto;
+     justify-content: center;
+}
+li,
+a {
+     display: flex;
+     width: 11%;
+     margin: auto auto;
+     text-decoration: none;
+     justify-content: center;
+     color: black;
+}
+
+.logo {
+     width: 20%;
+}
+
+.nav-icons {
+     height: 1rem;
+}
+
+main {
+     height: 5rem;
+     background: url(../images/mainbanner.jpg) no-repeat;
+	background-size: cover;
+	max-width: 100%;
+     height: auto;
+	padding: 14rem 0 5rem 20rem;
+}
+
+h1 {
+     font-size: 2.8rem;
+}
+
+main span {
+     font-size: 0.7rem;
+}
+
+.main-container {
+     display: flex;
+     flex-direction: column;
+}
+
+.btn {
+     width: 16%;
+     font-size: 0.6rem;
+     text-align: center;
+     background-color: black;
+     color: white;
+     padding: 10px 0;
+}
+
+.popup {
+     width: 27%;
+     display: flex;
+     flex-direction: column;
+     background-color: black;
+     color: white;
+     padding: 1.5rem;
+     margin-top: 4rem;
+}
+
+.popup span {
+     padding: 0.8rem 0;
+}
+
+.popup h3 span {
+     font-size: 2.5rem;
+}
+
+.popup h3 {
+     line-height: 2rem;
+     padding: 1rem 0;
+}
+
+.popup .btn {
+     background-color: white;
+     color: black;
+     width: 70%;
+}
+
+
+/* FEATURES SECTION */
+
+.features img {
+     height: 3rem;
+     width: 3rem;
+}
+
+.services,
+.momentum {
+     display: flex;
+     justify-content: space-around;
+     padding: 5rem;
+}
+
+.features {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 25%;
+}
+
+.features * {
+     padding: 0.4rem 0;
+}
+
+.features p{
+     line-height: 1.4rem;
+     text-align: center;
+}
+
+/* MOMENTUM */
+
+.momentum,
+.promo {
+     background-color: rgb(231, 231, 231);
+}
+
+.leftsidevideo {
+     display: flex;
+     flex-direction: column;
+     width: 30%;
+     justify-content: space-between;
+}
+
+h2 {
+     font-size: 2rem;
+}
+
+.leftsidevideo .btn {
+     width: 40%;
+}
+
+.video {
+	width: 30rem;
+	height: 17rem;
+	background: url(../images/videodog.jpg) no-repeat;
+	background-size: cover;
+	border: solid 0.3rem black;
+     display: flex;
+}
+
+.leftsidevideo p {
+     line-height: 1.4rem;
+}
+
+/* STAFF SECTION */
+
+.staff {
+     display: flex;
+     justify-content: space-around;
+     padding: 4rem 0;
+}
+
+.staff1,
+.staff2,
+.staff3 {
+     background: url(../images/stylist1.jpg) no-repeat;
+     background-size: contain;
+     width: 30%;
+     height: 29rem;
+     display: flex;
+     justify-content: center;
+     align-items: flex-end;
+}
+
+.staff2 {
+     background: url(../images/stylist2.jpg) no-repeat;
+     background-size: contain;
+}
+
+.staff3 {
+     background: url(../images/stylist3.jpg) no-repeat;
+     background-size: contain;
+}
+
+.tag {
+     background-color: black;
+     width: 70%;
+     height: 4.5rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+
+}
+
+.tag * {
+     color: white;
+     padding: 0.3rem 0;
+}
+
+.tag span {
+     font-size: 0.7rem;
+}
+
+/* PROMOTION SECTION */
+
+.promo {
+     background: url(../images/victor-grabarczyk-N04FIfHhv_k-unsplash.jpg) no-repeat;
+     background-size: cover;
+     width: 110%;
+     height: 33rem;
+
+}
+
+.promo-container {
+     display: flex;
+     height: 100%;
+     width: 30%;
+     flex-direction: column;
+     justify-content: center;
+     padding: 0 4rem;
+}
+
+.promo-container p {
+     font-size: 2rem;
+     padding: 1.4rem 0;
+}
+
+.promo-container .btn {
+     width: 60%;
+}
+
+/* LOOKBOOK SECTION */
+
+h2 {
+     text-align: center;
+     width: 100%;
+     padding-top: 5rem;
+}
+
+.lookbook {
+     padding: 4rem 0;
+     display: flex;
+     justify-content: space-around;
+
+}
+
+.lookbook section {
+     height: 50rem;
+     width: 30%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+}
+
+.lookbook div img {
+     width: 100%;
+     height: auto;
+     flex-shrink: 1;
+
+}
+
+.blackbox {
+     background-color: black;
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-grow: 2;
+}
+
+.blackbox h1 {
+     color: white;
+     font-size: 10rem;
+}
+/* main > div {
+	width: 40vw;
+}
+
+.main-container {
+     display: flex;
+     flex-direction: column;
+     margin-top: 0;
+}
+
+.main-container * {
+     display: flex;
+}
+
+.main-container h1,
+.main-container > span, 
+.main-container > button {
+     margin: 10px 150px;
+}
+
+button {
+     width: 25%;
+     justify-content: center;
+     align-items: center;
+     font-size: 11px;
+     height: 30px;
+     background: black;
+     color: white;
+
+}
+
+.blackbox {
+     display: flex;
+     flex-direction: column;
+     margin: 50px 150px;
+     border: 1px solid black;
+     width: 25%;
+     height: 250px;
+     background: black;
+     color: white;
+     justify-content: space-around;
+     font-size: 14px;
+}
+
+div.blackbox * {
+     margin-left: 30px;
+}
+
+div button {
+     background: white;
+     color: black;
+     width: 60%;
+} */
+/* h1 {
+	font-size: 4.5rem;
+}
+
+h2 {
+	font-size: 2.5rem;
+}
+
+h3 {
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+span {
+	font-size: 1rem;
+}
+
+.btn {
+	padding: 1rem;
+	font: inherit;
+	font-size: 1em;
+	background-color: black;
+	color: white;
+	border: none;
+	cursor: pointer;
+	font-weight: 500;
+}
+
+/* Navigations */
+
+/* .logo img {
+	height: 60px;
+}
+
+header {
+	font-family: "Mulish", Arial, Helvetica, sans-serif;
+}
+
+header nav * {
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+}
+
+header nav {
+	padding: 1.2rem 6rem;
+	height: 100px;
+	width: 100vw;
+	background-color: #e2d8c8;
+	border-bottom: solid lightgray thin;
+}
+
+header nav > a {
+	width: 15vw;
+}
+
+header nav ul {
+	width: 60vw;
+}
+
+header nav ul li {
+	padding: 0 2rem;
+}
+
+header nav ul li > a {
+	font-size: 1rem;
+	color: #666057;
+}
+
+header nav ul li a > img {
+	height: 1rem;
+}
+
+header nav ul li:last-child a > img {
+	height: 1.1rem;
+}
+
+header nav a.bookings {
+	font-size: 1rem;
+	color: black;
+}
+
+.hamburger {
+	justify-content: end;
+	float: right;
+	font-size: 2rem;
+	border-radius: 10%;
+	background-color: #666057;
+	color: #e2d8c8;
+	transition: color ease-in-out 0.25s;
+	display: none;
+}
+
+.hamburger:hover {
+	color: white;
+} */ */
